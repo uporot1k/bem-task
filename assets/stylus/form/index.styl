@@ -1,0 +1,82 @@
+.form
+  --border-width 3px
+  &_border
+    border-color var(--bg-borderer)
+    border-width var(--border-width)
+  &_view
+    &_default
+      background-color var(--bg-primary)  
+  &__item
+    display flex
+    flex-direction: column
+    border-bottom var(--border-width)
+    &:last-child
+      border-bottom unset
+    &_distibute
+      &_between
+        align-items center   
+    &_vertical-align
+      &_center
+        justify-content: center
+    &_indent-b
+      &_xxxs
+        margin-bottom var(--indent-xxxs)
+      &_xxs
+        margin-bottom var(--indent-xxxs)
+      &_s
+        margin-bottom var(--indent-s)
+      &_m
+        margin-bottom var(--indent-m)
+      &_l
+        margin-bottom var(--indent-l)
+      &_xl
+        margin-bottom var(--indent-xl)
+      &_xxl
+        margin-bottom var(--indent-xxl)
+      &_xxxl
+        margin-bottom var(--indent-xxxl)
+      &_xxxxl
+        margin-bottom var(--indent-xxxxl)
+    &_space-h
+      &_xxxs
+        padding 0 var(--indent-xxxs)
+      &_xxs
+        padding var(--indent-xxxs)
+      &_s
+        padding var(--indent-s)
+      &_m
+        padding var(--indent-m)
+      &_l
+        padding var(--indent-l)
+      &_xl
+        padding var(--indent-xl)
+      &_xxl
+        padding var(--indent-xxl)
+      &_xxxl
+        padding var(--indent-xxxl)
+      &_xxxxl
+        padding var(--indent-xxxxl)
+    &_space-v
+      &_xxxs
+        padding var(--indent-xxxs) 0
+      &_xxs
+        padding var(--indent-xxxs) 0
+      &_s
+        padding var(--indent-s) 0
+      &_m
+        padding var(--indent-m) 0
+      &_l
+        padding var(--indent-l) 0
+      &_xl
+        padding var(--indent-xl) 0
+      &_xxl
+        padding var(--indent-xxl) 0
+      &_xxxl
+        padding var(--indent-xxxl) 0
+      &_xxxxl
+        padding var(--indent-xxxxl) 0
+  &__label
+    &_width
+      &_default
+        width 35%
+

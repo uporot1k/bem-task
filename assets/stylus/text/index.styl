@@ -1,0 +1,67 @@
+.text
+  display flex
+  flex-flow wrap
+  &_align
+    &_center
+      justify-content center
+  &_size
+    &_s
+      font-size var(--font-size-s)
+      --text-width-s 20px
+      --text-width-m 48px
+      --text-width-l 100px
+      --text-height-default 8px
+    &_m
+      font-size var(--font-size-m)  
+      --text-width-s 24px
+      --text-width-m 56px
+      --text-width-l 114px
+      --text-height-default 10px
+    &_l
+      font-size var(--font-size-l)    
+      --text-width-s 28px
+      --text-width-m 68px
+      --text-width-l 138px
+      --text-height-default 11px
+    &_xl
+      font-size var(--font-size-xl)  
+      --text-width-s 32px
+      --text-width-m 74px
+      --text-width-l 154px  
+      --text-height-default 13px
+    &_xxl
+      font-size var(--font-size-xxl) 
+      --text-width-s 36px
+      --text-width-m 88px
+      --text-width-l 184px   
+      --text-height-default 16px
+  &_type
+    &_h1
+      margin 18px 0 24px    
+    &_h2
+      margin 45px 0 21px    
+    &_h3
+      margin 42px 0 0    
+    &_p
+      margin 15px 0 21px
+  &_view
+    &_primary
+      --text-color var(--text-color-primary)    
+    &_secondary
+      --text-color var(--text-color-secondary)    
+    &_ghost
+      --text-color var(--text-color-ghost)    
+    &_link
+      --text-color var(--text-color-link)    
+  &__word
+    background-color var(--text-color)
+    &_width
+      &_s
+        width var(--text-width-s)
+        height var(--text-height-default)
+      &_m
+        width var(--text-width-m)
+        height var(--text-height-default)
+      &_l
+        width var(--text-width-l)
+        height var(--text-height-default)

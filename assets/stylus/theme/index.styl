@@ -1,0 +1,102 @@
+* {
+  box-sizing border-box
+}
+
+.theme
+  &_color
+    &_project
+      &-default
+
+        // Bg color
+        --bg-primary #fff
+        --bg-accent #ffcc00
+        --bg-borderer #000000
+
+        // Text color
+        --text-color-primary #000000
+        --text-color-secondary rgba(0, 0, 0, 0.6)
+        --text-color-additional rgba(0, 0, 0, 0.3)
+        --text-color-link #0077ff
+
+        --image-stub url("./../images/image-placeholder-primary.svg");
+      &-brand
+
+        // Bg color
+        --bg-primary #0077ff
+        --bg-accent #FFFFFF
+        --bg-borderer #FFFFFF
+
+        // Text color
+        --text-color-primary #FFFFFF
+        --text-color-secondary rgba(255, 255, 255, 0.6)
+        --text-color-additiona rgba(255, 255, 255, 0.3)
+        --text-color-link #FFFFFF
+
+        --image-stub url("./../images/image-placeholder-inverse.svg");
+      &-inverse
+
+        // Bg color
+        --bg-primary   #000000
+        --bg-accent    #FFFFFF
+        --bg-borderer  #FFFFFF
+
+        // Text color
+        --text-color-primary  #FFFFFF
+        --text-color-secondary  rgba(255, 255, 255, 0.6)
+        --text-color-additional  rgba(255, 255, 255, 0.3)
+        --text-color-link  #0077ff
+
+        --image-stub url("./../images/image-placeholder-inverse.svg");
+      &-warning
+
+        // Bg color
+        --bg-primary   #ff3333
+        --bg-accent    #FFFFFF
+        --bg-borderer  #ff3333
+
+        // Text color
+        --text-color-primary  #FFFFFF
+        --text-color-secondary  rgba(255, 255, 255, 0.6)
+        --text-color-additional  rgba(255, 255, 255, 0.3)
+        --text-color-link  #FFFFFF
+
+  &_size
+    &_default
+
+      --font-size-s     8px
+      --font-size-m     10px
+      --font-size-l     11px
+      --font-size-xl    13px
+      --font-size-xl    16px
+
+      --line-height-s   21px
+      --line-height-m   25px
+      --line-height-l   28px
+      --line-height-xl  34px
+      --line-height-xl  38px
+
+  &_space
+    &_default
+
+      --indent-xxxs    3px
+      --indent-xxs     5px
+      --indent-xs      9px
+      --indent-s       15px
+      --indent-m       18px
+      --indent-l       24px
+      --indent-xl      27px
+      --indent-xxl     36px
+      --indent-xxxl    45px
+      --indent-xxxxl   51px
+      --indent-xxxxxl  72px
+  &_gap
+    &_small
+      --gap var(--indent-xl)
+
+@media (max-width 1024px)
+  .theme
+    display flex
+    flex-direction column
+    &_gap
+      &_small
+        --gap var(--indent-s)

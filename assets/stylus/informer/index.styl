@@ -1,0 +1,37 @@
+.informer
+  display flex
+  flex-direction column
+  &_border
+    &_all
+      border 3px solid var(--bg-bordered)
+  &_view
+    &_default
+      background-color var(--bg-primary)  
+  &__content
+    display flex
+    &_distribute
+      &_default
+        align-items initial 
+      &_between
+        align-items space-between  
+      &_center
+        align-items center
+    &_space-a
+      &_xl
+        padding: var(--indent-xl)    
+      &_xxl
+        padding: var(--indent-xxl)    
+  &__action
+    display flex
+    &_distribute
+      &_defaul
+        justify-content: initial
+      &_between
+        justify-content space-between  
+      &_center
+        justify-content center
+    &_space-a
+      &_xl
+        padding: var(--indent-xl)    
+      &_xxl
+        padding: var(--indent-xxl)      

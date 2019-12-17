@@ -1,0 +1,41 @@
+.list
+  display flex
+  flex-direction: column
+  &_border
+    &_all
+      border 3px solid var(--bg-primary)
+    &_view
+      &_default
+        background-color var(--bg-primary)  
+  &__item
+    display flex
+    &_border
+      &_bottom
+        //
+      &_top
+        //
+    &_distribute
+      &_between
+        justify-content space-between
+    &_vertical-align
+      &_center
+        align-items center
+    &_indent
+      &-t
+        &_m
+          margin-top var(--indent-m)      
+      &-b
+        &_s
+          margin-bottom var(--indent-s)
+        &_m
+          margin-bottom var(--indent-m)
+        &_l
+          margin-bottom var(--indent-l)
+        &_xl
+          margin-bottom var(--indent-xl)
+    &_space
+      &-b
+        padding-bottom var(--indent-s)
+      &-a
+        padding var(--indent-m)        
+
