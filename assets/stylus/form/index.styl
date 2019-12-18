@@ -8,16 +8,15 @@
       background-color var(--bg-primary)  
   &__item
     display flex
-    flex-direction: column
     border-bottom var(--border-width)
     &:last-child
       border-bottom unset
     &_distibute
       &_between
-        align-items center   
+        justify-content center
     &_vertical-align
       &_center
-        justify-content: center
+        align-items center
     &_indent-b
       &_xxxs
         margin-bottom var(--indent-xxxs)
@@ -37,46 +36,67 @@
         margin-bottom var(--indent-xxxl)
       &_xxxxl
         margin-bottom var(--indent-xxxxl)
-    &_space-h
-      &_xxxs
-        padding 0 var(--indent-xxxs)
-      &_xxs
-        padding var(--indent-xxxs)
-      &_s
-        padding var(--indent-s)
-      &_m
-        padding var(--indent-m)
-      &_l
-        padding var(--indent-l)
-      &_xl
-        padding var(--indent-xl)
-      &_xxl
-        padding var(--indent-xxl)
-      &_xxxl
-        padding var(--indent-xxxl)
-      &_xxxxl
-        padding var(--indent-xxxxl)
     &_space-v
       &_xxxs
-        padding var(--indent-xxxs) 0
+        padding-top var(--indent-xxxs)
+        padding-bottom var(--indent-xxxs)
       &_xxs
-        padding var(--indent-xxxs) 0
+        padding-top var(--indent-xxs)
+        padding-bottom var(--indent-xxs)
       &_s
-        padding var(--indent-s) 0
+        padding-top var(--indent-s)
+        padding-bottom var(--indent-s)
       &_m
-        padding var(--indent-m) 0
+        padding-top var(--indent-m)
+        padding-bottom var(--indent-m)
       &_l
-        padding var(--indent-l) 0
+        padding-top var(--indent-l)
+        padding-bottom var(--indent-l)
       &_xl
-        padding var(--indent-xl) 0
+        padding-top var(--indent-xl)
+        padding-bottom var(--indent-xl)
       &_xxl
-        padding var(--indent-xxl) 0
+        padding-top var(--indent-xxl)
+        padding-bottom var(--indent-xxl)
       &_xxxl
-        padding var(--indent-xxxl) 0
+        padding-top var(--indent-xxxl)
+        padding-bottom var(--indent-xxxl)
       &_xxxxl
-        padding var(--indent-xxxxl) 0
+        padding-top var(--indent-xxxxl)
+        padding-bottom var(--indent-xxxxl)
+    &_space-h
+      &_xxxs
+        padding-left var(--indent-xxxs)
+        padding-right var(--indent-xxxs)
+      &_xxs
+        padding-left var(--indent-xxs)
+        padding-right var(--indent-xxs)
+      &_s
+        padding-left var(--indent-s)
+        padding-right var(--indent-s)
+      &_m
+        padding-left var(--indent-m)
+        padding-right var(--indent-m)
+      &_l
+        padding-left var(--indent-l)
+        padding-right var(--indent-l)
+      &_xl
+        padding-left var(--indent-xl)
+        padding-right var(--indent-xl)
+      &_xxl
+        padding-left var(--indent-xxl)
+        padding-right var(--indent-xxl)
+      &_xxxl
+        padding-left var(--indent-xxxl)
+        padding-right var(--indent-xxxl)
+      &_xxxxl
+        padding-left var(--indent-xxxxl)
+        padding-right var(--indent-xxxxl)
   &__label
     &_width
       &_default
         width 35%
+  &__control
+    display flex
+    flex-grow 1     
 

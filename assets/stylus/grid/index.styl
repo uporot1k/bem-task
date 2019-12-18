@@ -1,10 +1,7 @@
 .grid
-  // Modificators
-  display grid
-  grid-template-columns: repeat(var(--m-columns), calc(100% / var(--m-columns)))
-  width 100%
+  display flex
+  width calc(100% + var(--col-gap) * 2)
   flex-wrap: wrap
-
   &_m-columns
     &_10
       --m-columns 10
@@ -13,13 +10,13 @@
   &_col-gap 
     &_two-thirds
       --col-gap calc(var(--gap) * (2 / 3))
-      margin 0 calc(var(--col-gap) * -1) 
+      margin: 0 calc(0px - var(--col-gap));
     &_full
       --col-gap calc(var(--gap) / 2)
-      margin 0 calc(0 - (var(--col-gap)))
+      margin: 0 calc(0px - var(--col-gap));
     &_half
       --col-gap calc(var(--gap) / 2 / 2)
-      margin 0 calc(var(--col-gap) * -1)
+      margin: 0 calc(0px - var(--col-gap));
   &_row-gap
     &_full
       --row-gap 1   
@@ -27,17 +24,17 @@
       --row-gap 0.5   
   // Elements
   &__fraction
-    padding: 0 var(--col-gap)
+    padding 0 var(--col-gap)
     margin var(--row-gap) 0
     &_m-col
       &_2
-        grid-column: span 2
+        width calc(2 * (100% / var(--m-columns)))
       &_3
-        grid-column: span 3
+        width calc(3 * (100% / var(--m-columns)))
       &_4
-        grid-column: span 4
+        width calc(4 * (100% / var(--m-columns)))
       &_5
-        grid-column: span 5
+        width calc(5 * (100% / var(--m-columns)))
       &_8
-        grid-column: span 8
+        width calc(8 * (100% / var(--m-columns)))
     
