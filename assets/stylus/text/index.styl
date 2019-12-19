@@ -1,41 +1,51 @@
 .text
   display flex
   flex-flow wrap
-  margin 5px 0
+  // margin 5px 0
   &_align
     &_center
       justify-content center
   &_size
     &_s
-      font-size var(--font-size-s)
       --text-width-s 20px
       --text-width-m 48px
       --text-width-l 100px
       --text-height-default 8px
+      .text__word
+        margin-top calc((var(--line-height-s) - var( --text-height-default)) / 100 * 36.66)
+        margin-bottom calc((var(--line-height-s) - var( --text-height-default)) / 100 * 64.44)
     &_m
-      font-size var(--font-size-m)  
       --text-width-s 24px
       --text-width-m 56px
       --text-width-l 114px
       --text-height-default 10px
+      .text__word
+        margin-top calc((var(--line-height-m) - var( --text-height-default)) / 100 * 36.66)
+        margin-bottom calc((var(--line-height-m) - var( --text-height-default)) / 100 * 64.44)
     &_l
-      font-size var(--font-size-l)    
       --text-width-s 28px
       --text-width-m 68px
       --text-width-l 138px
       --text-height-default 11px
+      .text__word
+        margin-top calc((var(--line-height-l) - var( --text-height-default)) / 100 * 36.66)
+        margin-bottom calc((var(--line-height-l) - var( --text-height-default)) / 100 * 64.44)
     &_xl
-      font-size var(--font-size-xl)  
       --text-width-s 32px
       --text-width-m 74px
       --text-width-l 154px  
       --text-height-default 13px
+      .text__word
+        margin-top calc((var(--line-height-xl) - var( --text-height-default)) / 100 * 36.66)
+        margin-bottom calc((var(--line-height-xl) - var( --text-height-default)) / 100 * 64.44)
     &_xxl
-      font-size var(--font-size-xxl) 
       --text-width-s 36px
       --text-width-m 88px
       --text-width-l 184px   
       --text-height-default 16px
+      .text__word
+        margin-top calc((var(--line-height-xxl) - var( --text-height-default)) / 100 * 36.66)
+        margin-bottom calc((var(--line-height-xxl) - var( --text-height-default)) / 100 * 64.44)
   &_type
     &_h1
       margin 18px 0 24px    
@@ -51,7 +61,7 @@
     &_secondary
       --text-color var(--text-color-secondary)    
     &_ghost
-      --text-color var(--text-color-ghost)    
+      --text-color var(--text-color-additional)    
     &_link
       --text-color var(--text-color-link)    
   &__word
