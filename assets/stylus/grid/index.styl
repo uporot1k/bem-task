@@ -19,13 +19,17 @@
       margin: 0 calc(0px - var(--col-gap));
   &_row-gap
     &_full
-      --row-gap 1   
+      --row-gap calc(var(--gap) / 2)  
+      // margin-top: calc(0px - var(--row-gap))
+      // margin-bottom: calc(0px - var(--row-gap))
     &_half
-      --row-gap 0.5   
+      --row-gap calc(var(--gap) / 2 / 2)  
+      // margin-top: calc(0px - var(--row-gap))
+      // margin-bottom: calc(0px - var(--row-gap))
   // Elements
   &__fraction
     padding 0 var(--col-gap)
-    margin var(--row-gap) 0
+    // margin var(--row-gap) 0
     &_m-col
       &_2
         width calc(2 * (100% / var(--m-columns)))

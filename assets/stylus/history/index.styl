@@ -5,18 +5,19 @@
   &__destination
     display flex
     align-items center  
-    // .text__word
-    //   &:last-child
-    //     margin 0
+  &__actions
+    margin-bottom: 0   
+  &__description
+    display block
   &__transaction
+    display flex
+    flex-direction: column
     padding var(--indent-m)
-   
+    &_open
+      .history__hide
+        display block
     &:not(:last-child)
-      border-bottom 3px solid var(--bg-borderer)
-  &__label
-    // .text__word
-    //   &:last-child
-    //     margin 0    
+      border-bottom 3px solid var(--bg-borderer)  
   &__quantity
     margin 0    
 
