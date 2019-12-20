@@ -1,6 +1,6 @@
 .grid
   display grid
-  flex-wrap: wrap
+  flex-wrap wrap
   grid-template-columns: repeat(var(--m-columns), 1fr)
   grid-row-gap var(--row-gap)
   grid-column-gap: calc(var(--col-gap) * 2);
@@ -21,9 +21,7 @@
       --row-gap calc(var(--gap) / 2)  
     &_half
       --row-gap calc(var(--gap) / 2 / 2)  
-  // Elements
   &__fraction
-    // padding 0 var(--col-gap)
     &_m-col
       &_2
         grid-column: span 2
@@ -38,3 +36,5 @@
 @media (max-width 1024px)
   .grid
     grid-template-columns: 1fr
+    &__fraction
+      grid-column unset

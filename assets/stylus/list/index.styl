@@ -9,11 +9,13 @@
         background-color var(--bg-primary)  
   &__item
     display flex
+    &:last-child
+      border-bottom 0
     &_border
       &_bottom
-        //
+        border-bottom 3px solid var(--bg-borderer)
       &_top
-        //
+        border-top 3px solid var(--bg-borderer)
     &_distribute
       &_between
         justify-content space-between
