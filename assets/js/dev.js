@@ -1,3 +1,10 @@
+const indexPage = require('~/stub/pages/index.json');
+
+const templater = require('~/templater.js');
+
+document.body.insertAdjacentHTML('afterbegin', templater(indexPage));
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const themeSwitcher = document.querySelector('.onoffswitch');
   bindEvent.apply(themeSwitcher, ["click", switchPageTheme]);
