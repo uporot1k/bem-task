@@ -5,7 +5,7 @@
   "main": "templater.js",
   "scripts": {
     "test": "parcel index.html",
-    "build:style": "parcel build assets/stylus/style.styl --out-dir build",
+    "build:style": "parcel build assets/stylus/main.styl --out-dir build",
     "build:js": "parcel build assets/js/script.js --out-dir build",
     "build:all": "npm run build:style && npm run build:js"
   },
