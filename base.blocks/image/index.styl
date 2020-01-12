@@ -2,6 +2,12 @@
   width 100%
   height 80px
   border 3px solid var(--bg-borderer)
-  background-image var(--image-stub)
-  background-repeat no-repeat
-  background-position center center
+  position relative
+  &::before
+    position absolute
+    content: var(--image-stub)
+    width 80px
+    height 64px
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
