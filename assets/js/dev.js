@@ -1,4 +1,4 @@
-const indexPage = require('~/stub/pages/index.json');
+const indexPage = require('~/stub/pages/product.json');
 
 const templater = require('~/templater.js');
 

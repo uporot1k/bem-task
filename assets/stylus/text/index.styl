@@ -11,52 +11,63 @@
       --text-width-l 100px
       --text-height-default 8px
       .text__word
-        margin-top calc((var(--line-height-s) - var( --text-height-default)) / 100 * 36)
-        margin-bottom calc((var(--line-height-s) - var( --text-height-default)) / 100 * 64)
+        // margin-top: 5px
+        // margin-bottom 8px
+        margin-top calc((var(--line-height-s) - var( --text-height-default)) / 100 * 64)
+        margin-bottom calc((var(--line-height-s) - var( --text-height-default)) / 100 * 36)
     &_m
       --text-width-s 24px
       --text-width-m 56px
       --text-width-l 114px
       --text-height-default 10px
       .text__word
-        margin-top calc((var(--line-height-m) - var( --text-height-default)) / 100 * 36)
-        margin-bottom calc((var(--line-height-m) - var( --text-height-default)) / 100 * 64)
+        // margin-top 5px
+        // margin-bottom: 10px
+        margin-top calc((var(--line-height-m) - var( --text-height-default)) / 100 * 54)
+        margin-bottom calc((var(--line-height-m) - var( --text-height-default)) / 100 * 46)
     &_l
       --text-width-s 28px
       --text-width-m 68px
       --text-width-l 138px
       --text-height-default 11px
       .text__word
-        margin-top calc((var(--line-height-l) - var( --text-height-default)) / 100 * 36)
-        margin-bottom calc((var(--line-height-l) - var( --text-height-default)) / 100 * 64)
+        // margin-top 6px
+        // margin-bottom 11px
+        margin-top calc((var(--line-height-l) - var( --text-height-default)) / 100 * 46)
+        margin-bottom calc((var(--line-height-l) - var( --text-height-default)) / 100 * 54)
     &_xl
       --text-width-s 32px
       --text-width-m 74px
       --text-width-l 154px  
       --text-height-default 13px
       .text__word
-        margin-top calc((var(--line-height-xl) - var( --text-height-default)) / 100 * 36)
-        margin-bottom calc((var(--line-height-xl) - var( --text-height-default)) / 100 * 64)
+        // margin-top 8px
+        // margin-bottom 13px
+        margin-top calc((var(--line-height-xl) - var( --text-height-default)) / 100 * 44)
+        margin-bottom calc((var(--line-height-xl) - var( --text-height-default)) / 100 * 56)
     &_xxl
       --text-width-s 36px
       --text-width-m 88px
       --text-width-l 184px   
       --text-height-default 16px
       .text__word
+        // margin-top 8px
+        // margin-bottom 14px
         margin-top calc((var(--line-height-xxl) - var( --text-height-default)) / 100 * 36)
         margin-bottom calc((var(--line-height-xxl) - var( --text-height-default)) / 100 * 64)
   &_type
     &_h1
-      margin 18px 0 24px    
+      margin 18px 0 24px !important   
     &_h2
-      margin 45px 0 21px    
+      margin 45px 0 21px !important    
     &_h3
-      margin 42px 0 0    
+      margin 42px 0 0 !important   
     &_p
-      margin 15px 0 21px
+      margin 15px 0 21px !important
   &_view
     &_primary
       --text-color var(--text-color-primary)    
+      
     &_secondary
       --text-color var(--text-color-secondary)    
     &_ghost
